@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigoxhzz Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #808080;
+            color: white;
+            overflow-x: hidden; /* Mencegah scroll horizontal jika tidak diperlukan */
+        }
+        header {
+            background-color: #ffa500;
+            color: white;
+            padding: 0px 10px; /* Padding untuk tinggi header */
+            display: flex;
+            align-items: center;
+            position: fixed; /* Tetap di atas saat scroll */
+            width: 100%; /* Memastikan header memenuhi lebar halaman */
+            z-index: 1000; /* Agar header selalu di atas konten lainnya */
+            top: 0; /* Menempatkan header di atas */
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .hamburger {
+            background-color: #ff8c00;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-left: auto; /* Mengisi ruang kosong di kiri, mendorong tombol ke kanan */
+    margin-right: 30px; /* Menambahkan jarak dari sisi kanan */
+        }
+        .hamburger:hover {
+            background-color: #ffa500;
+            transform: scale(1.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: none;
+            position: absolute;
+            right: 50px;
+            background-color: #ffa500;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #808080;
+            z-index: 999;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav ul.show {
+            display: block;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .rounded-box {
+            border-radius: 15px;
+            background-color: #ffa500;
+            padding: 6px;
+            overflow: hidden;
+            width: 92%;
+            margin: 1px auto; /* Pusatkan dengan margin otomatis */
+            text-align: center;
+        }
+        .marquee {
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+            font-size: 15px;
+            text-align: center;
+        }
+        @keyframes marquee {
+            from {
+                transform: translateX(50%);
+            }
+            to {
+                transform: translateX(-400%);
+            }
+        }
+        /* Gaya untuk tombol */
+        .long-button {
+            background-color: #ffa500; /* Warna latar belakang */
+            color: white; /* Warna teks */
+            border: none; /* Menghilangkan border */
+            padding: 7px; /* Padding tombol */
+            font-size: 18px; /* Ukuran font */
+            cursor: pointer; /* Pointer saat hover */
+            text-align: center; /* Teks di tengah */
+            width: 90%; /* Mengatur lebar tombol menjadi 90% */
+            border-radius: 5px; /* Sudut membulat */
+            margin: 10px auto; /* Jarak atas dan bawah, serta margin kiri dan kanan otomatis untuk memusatkan */
+            display: block; /* Memastikan tombol berada dalam baris baru */
+            transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+        }
+        .long-button:hover {
+            background-color: #ff8c00; /* Warna latar belakang saat hover */
+            transform: scale(1.02); /* Efek zoom saat hover */
+        }
+        main {
+            padding-top: 80px; /* Memberikan ruang di atas untuk header */
+            padding-bottom: 20px; /* Menambah ruang di bawah */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="Logo" class="logo">
+        <h1>Jigoxhzz</h1>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav>
+            <ul id="menu">
+                <li><a href="https://t.me/JigoxhZzz" target="_blank">Telegram</a></li>
+                <li><a href="https://youtube.com/@hackgameind?si=Cxi6Os93ir3w6LOd" target="_blank">Youtube</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: center; color: #ffa500; margin: 7px 0; font-size: 20px">Welcome to the Jigoxhz Website</h2>
+        <div class="rounded-box">
+            <div class="marquee">WELCOME, CONTINUE TO SUPPORT MY YOUTUBE CHANNEL WITH SUBSCRIBE AND LIKE, AND IF THERE IS A PROBLEM, YOU CAN CONTACT ME</div>
+        </div>
+
+        <!-- Tambahkan tombol panjang di sini -->
+        <div style="text-align: center;">
+            <a href="https://daniblogs.com/BF/1196622xw" style="text-decoration: none;">
+                <button class="long-button">SIMPLE SCRIPT CPM V1</button>
+            </a>
+        </div>
+        
+        <!-- Tambahan konten untuk menggulir -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Jigoxhzz. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

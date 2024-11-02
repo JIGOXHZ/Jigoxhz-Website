@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigoxhzz Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #808080;
+            color: white;
+        }
+        header {
+            background-color: #ffa500;
+            color: white;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            position: fixed; /* Membuat header tetap di atas */
+            width: 100%; /* Memastikan header mengambil lebar penuh */
+            top: 0; /* Menempatkan header di atas */
+            z-index: 1000; /* Memastikan header berada di atas konten lain */
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .hamburger {
+    background-color: #ff8c00;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: auto; /* Mengisi ruang kosong di kiri, mendorong tombol ke kanan */
+    margin-right: 20px; /* Menambahkan jarak dari sisi kanan */
+}
+        .hamburger:hover {
+            background-color: #ffa500;
+            transform: scale(1.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: none;
+            position: absolute;
+            right: 50px;
+            background-color: #ffa500;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #808080;
+            z-index: 999;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav ul.show {
+            display: block;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .custom-button {
+            background-color: #808080;
+            border: 2px solid #ffa500;
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            margin: 20px 0 0 0;
+            margin-left: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .custom-button:hover {
+            background-color: rgba(255, 165, 0, 0.8);
+            transform: scale(1.05);
+        }
+        .button-container {
+            display: flex;
+            align-items: center;
+        }
+        .rounded-box {
+            border-radius: 15px;
+            background-color: #ffa500;
+            padding: 15px;
+            overflow: hidden;
+            width: 92%;
+            margin: 1px auto;
+            text-align: center;
+            height: 0px;
+            display: flex;
+            align-items: center;
+        }
+        .marquee {
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+            font-size: 15px;
+            text-align: center;
+        }
+        @keyframes marquee {
+            from {
+                transform: translateX(50%);
+            }
+            to {
+                transform: translateX(-200%);
+            }
+        }
+        .long-button {
+            background-color: #ffa500; /* Warna latar belakang */
+            color: white; /* Warna teks */
+            border: none; /* Menghilangkan border */
+            padding: 10px; /* Padding tombol */
+            font-size: 18px; /* Ukuran font */
+            cursor: pointer; /* Pointer saat hover */
+            text-align: center; /* Teks di tengah */
+            width: 94%; /* Mengatur lebar tombol menjadi 100% */
+            border-radius: 5px; /* Sudut membulat */
+            margin: 20px auto; /* Jarak atas dan bawah, serta margin kiri dan kanan otomatis untuk memusatkan */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            display: block; /* Memastikan tombol berada dalam baris baru */
+            transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+        }
+        footer {
+            background-color: #808080; /* Warna latar belakang footer */
+            text-align: center; /* Teks di tengah */
+            padding: 10px; /* Padding pada footer */
+            margin-top: 320px; /* Menempatkan footer di bagian bawah */
+        }
+        main {
+            padding-top: 80px; /* Memberikan padding lebih besar untuk menghindari konten tertutup oleh header */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="Logo" class="logo">
+        <h1>Jigoxhzz</h1>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <nav>
+            <ul id="menu">
+                <li><a href="https://t.me/JigoxhZzz" target="_blank">Telegram</a></li>
+                <li><a href="https://youtube.com/@hackgameind?si=Cxi6Os93ir3w6LOd" target="_blank">Youtube</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: center; color: #ffa500; margin: 7px 0; font-size: 20px">Welcome to the Jigoxhz Website</h2>
+        <div class="rounded-box">
+            <div class="marquee">WELCOME, CONTINUE TO SUPPORT MY YOUTUBE CHANNEL WITH SUBSCRIBE AND LIKE, AND IF THERE IS A PROBLEM, YOU CAN CONTACT ME</div>
+        </div>
+        <div class="button-container">
+            <a href="https://devuploads.com/jdroiy5b2wob" class="custom-button">Jigoxhz Virtual</a>
+            <a href="https://devuploads.com/61n5500c335a" class="custom-button" style="margin-left: 5px;">Jigoxhz GG</a>
+        </div>
+        <a href="ScriptGameGuardian.html" class="long-button">Script Game Guardian</a> <!-- Tombol panjang dengan latar belakang ffa500 -->
+    </main>
+    <footer>
+        <p style="text-align: center; margin-top: 20px; color: #ffa500;">&copy; 2024 Jigoxhzz. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
